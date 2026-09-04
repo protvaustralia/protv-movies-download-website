@@ -68,6 +68,12 @@ p { margin: 0 0 12px; color: var(--text-dim); }
   border-radius: 8px;
 }
 
+.brand-logo {
+  height: 34px;
+  width: auto;
+  border-radius: 6px;
+}
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -138,6 +144,15 @@ p { margin: 0 0 12px; color: var(--text-dim); }
   height: 84px;
   border-radius: 20px;
   margin: 0 auto 28px;
+  box-shadow: 0 12px 40px rgba(232, 93, 4, 0.3);
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 auto 32px;
+  border-radius: var(--radius);
   box-shadow: 0 12px 40px rgba(232, 93, 4, 0.3);
 }
 
@@ -451,9 +466,10 @@ p { margin: 0 0 12px; color: var(--text-dim); }
 }
 
 .download-card-icon img {
-  width: 56px;
   height: 56px;
-  border-radius: 14px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 .download-card-info h3 { font-size: 17px; margin-bottom: 10px; }
