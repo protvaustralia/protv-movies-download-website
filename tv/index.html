@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProTV Movies — Install on TV</title>
+  <meta name="description" content="Stable install link for the ProTV Movies TV app on Android TV and Fire TV Stick — always fetches the latest TV APK from GitHub Releases." />
+  <link rel="canonical" href="https://protvmovies.com.au/tv" />
+  <link rel="icon" href="../assets/icon.png" type="image/png" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .tv-card {
+      max-width: 460px;
+      width: 100%;
+      margin: 24px;
+      text-align: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 32px;
+    }
+    .tv-icon { width: 72px; height: 72px; border-radius: 16px; margin: 0 auto 20px; }
+    .tv-card h1 { font-size: 22px; margin-bottom: 8px; }
+    .tv-card p { font-size: 14px; }
+    .tv-status { font-size: 13px; color: var(--text-mute); margin-bottom: 24px; }
+    .tv-btn { width: 100%; }
+    .tv-meta { margin-top: 18px; font-size: 12.5px; }
+    .tv-back { display: inline-block; margin-top: 20px; font-size: 12.5px; color: var(--text-mute); }
+    .tv-back:hover { color: var(--text-dim); }
+  </style>
+</head>
+<body data-auto-redirect="true">
+
+  <div class="tv-card">
+    <img src="../assets/icon.png" alt="ProTV Movies" class="tv-icon" />
+    <h1>Installing ProTV Movies (TV)</h1>
+    <p class="tv-status" id="tv-status">Fetching the latest release…</p>
+
+    <a id="tv-download-btn" data-download="tv" href="https://github.com/protvaustralia/protv-movies-download-website/releases/latest" class="btn btn-primary btn-lg tv-btn" autofocus>
+      Download APK
+    </a>
+
+    <p class="tv-meta" id="tv-meta">&nbsp;</p>
+    <a href="../" class="tv-back">Not on a TV? Go to the full site →</a>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+</html>
