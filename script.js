@@ -88,7 +88,7 @@
     if (heroMeta) {
       heroMeta.textContent = mobile.asset
         ? `Free forever · Released ${dateStr} · ${mobile.sizeStr}`
-        : 'View the latest release on GitHub';
+        : 'Checking for the latest release…';
     }
 
     const tvStatus = document.getElementById('tv-status');
@@ -139,7 +139,7 @@
     link.href = release.html_url || `https://github.com/${REPO}/releases`;
     link.target = '_blank';
     link.rel = 'noopener';
-    link.textContent = 'View on GitHub →';
+    link.textContent = 'View full changelog →';
     changelogEl.appendChild(link);
   }
 
